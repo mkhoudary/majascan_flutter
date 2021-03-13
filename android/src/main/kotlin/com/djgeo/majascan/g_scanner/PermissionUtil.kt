@@ -52,7 +52,7 @@ class PermissionUtil {
             try {
                 JumpPermissionManagement.goToSetting(context)
             } catch (e: Exception) {
-                Log.e(TAG, e.message)
+                Log.e(TAG, e.message.toString())
                 JumpPermissionManagement.ApplicationInfo(context)
             }
 

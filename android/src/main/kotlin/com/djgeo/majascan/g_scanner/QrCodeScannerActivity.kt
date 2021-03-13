@@ -83,7 +83,7 @@ class QrCodeScannerActivity : AppCompatActivity() {
     }
     private fun findColorByBundle(bundleKey: String): Int {
         var color = 0
-        val stringTitleColor = intent.getStringExtra(bundleKey)
+        val stringTitleColor = intent.getStringExtra(bundleKey).toString()
         if (!TextUtils.isEmpty(stringTitleColor) && stringTitleColor.indexOf("#") == 0) {
             try {
                 color = Color.parseColor(stringTitleColor)

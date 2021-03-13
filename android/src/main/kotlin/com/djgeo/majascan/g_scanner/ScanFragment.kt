@@ -44,7 +44,7 @@ class ScanFragment : Fragment(), ScanInteractorImpl.ScanCallbackInterface {
 
     companion object {
 
-        fun newInstance(title: String, hasFlashLight: Boolean, toolBarColor: Int, titleColor: Int,
+        fun newInstance(title: String?, hasFlashLight: Boolean, toolBarColor: Int, titleColor: Int,
                         qrCornerColor: Int = 0, qrScanColor: Int = 0, scanAreaScale: Float): ScanFragment {
 
             val args = Bundle()
